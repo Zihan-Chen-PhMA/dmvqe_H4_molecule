@@ -2,9 +2,11 @@ requirements:
 
 python >= 3.10
 
+joblib >= 1.4
+
 qiskit < 1
 
-Also, as a feature of qiskit, calculations using GPU is not supported on windows. (Using CPU 
+Also, as a feature of qiskit<1, calculations using GPU is not supported on windows. (Using CPU 
 calculations on windows is fine.) Linux/WSL2 supports GPU (with CUDA) calculations.  
 
 To parallelize things, joblib is used and the number of threads is set to be 25. You may change it according 
